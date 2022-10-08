@@ -107,6 +107,7 @@ img {
   padding-bottom: 32px;
   display: block;
   min-width: 48px;
+  transition: color var(--animation);
 }
 .navigation-link:hover,
 .navigation-link:focus {
@@ -131,6 +132,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+  transition: color var(--animation);
 }
 .header-mail:hover,
 .header-tel:hover,
@@ -228,6 +230,7 @@ img {
   border-color: transparent;
   color: var(--second-color);
   cursor: pointer;
+  transition: background-color var(--animation);
 }
 
 .hero-btn:hover,
@@ -417,6 +420,7 @@ img {
   justify-content: center;
   fill: var(--icon-color);
   border-radius: 50%;
+  transition: background-color var(--animation);
 }
 .media-link:focus {
   background-color: var(--btn-background-color);
@@ -453,6 +457,7 @@ img {
   fill: currentColor;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  transition: border-color var(--animation);
 }
 .clients-link:hover {
   border-color: var(--link-color);
@@ -508,6 +513,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-link-color);
+  transition: color var(--animation);
 }
 
 .adress-tel:hover,
@@ -570,6 +576,7 @@ img {
   align-items: center;
   justify-content: center;
   fill: var(--second-color);
+  transition: backgtound-color var(--animation), border-radius var(--animation);
 }
 /* ----------- portfolio============= */
 
@@ -601,6 +608,8 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   background-color: var(--background-color-third);
+  transition: color var(--animation), background-color var(--animation),
+    box-shadow var(--animation);
 }
 
 .portfolio-examples-list {
@@ -636,6 +645,7 @@ img {
   display: block;
   color: var(--main-color);
   background-color: var(--background-color-third);
+  transition: box-shadow var(--animation), transform var(--animation);
 }
 .portfolio-img-thumb {
   position: relative;
