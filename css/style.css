@@ -143,8 +143,6 @@ img {
 
 .logo-mail,
 .logo-tel {
-  width: 16px;
-  height: 12px;
   fill: currentColor;
   margin-right: 10px;
 }
@@ -156,20 +154,6 @@ img {
 }
 
 .navigation-link.current::after {
-  position: absolute;
-  bottom: -1px;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--link-color);
-}
-.navigation-link.current.port {
-  min-width: 100%px;
-}
-
-.navigation-link.current.port::after {
   position: absolute;
   bottom: -1px;
   display: block;
@@ -420,7 +404,7 @@ img {
   justify-content: center;
   fill: var(--icon-color);
   border-radius: 50%;
-  transition: background-color var(--animation);
+  transition: background-color var(--animation), fill var(--animation);
 }
 .media-link:focus {
   background-color: var(--btn-background-color);
@@ -454,19 +438,22 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--icon-color);
-  fill: currentColor;
+
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  transition: border-color var(--animation);
+  transition: border-color var(--animation), color var(--animation);
+}
+.clients-icon {
+  fill: currentColor;
 }
 .clients-link:hover {
+  color: var(--link-color);
   border-color: var(--link-color);
-  fill: var(--link-color);
 }
 
 .clients-link:focus {
+  color: var(--link-color);
   border-color: var(--link-color);
-  fill: var(--link-color);
 }
 
 /* ----------- footer=============*/
@@ -506,6 +493,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-color);
+  transition: color var(--animation);
 }
 .adress-tel,
 .adress-mail {
@@ -575,7 +563,7 @@ img {
   align-items: center;
   justify-content: center;
   fill: var(--second-color);
-  transition: backgtound-color var(--animation);
+  transition: background-color var(--animation);
 }
 /* ----------- portfolio============= */
 
@@ -619,7 +607,6 @@ img {
 .portfolio-examples-item {
   margin: 15px;
   width: 370px;
-  border: 1px solid var(--border-color-second);
 }
 .portfolio-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
